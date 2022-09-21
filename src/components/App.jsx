@@ -1,16 +1,14 @@
+import { GlobalStyle } from './GlobalStyle';
+import  {PhoneBoockContainer}  from './Phonebook/Phonebook.styled';
+import  PhoneBookSection  from './Phonebook/Phonebook'
+
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <PhoneBoockContainer>
+    <GlobalStyle />
+    <PhoneBookSection />
+  </PhoneBoockContainer>
   );
 };
